@@ -1,5 +1,5 @@
-#include <stdio.h>
 #include <stdlib.h>
+#include <stdio.h>
 #include <time.h>
 
 /**
@@ -7,9 +7,15 @@
  *
  * Return: Always 0 (success)
  */
+
 int main(void)
 {
-	printf("with proper grammar, but the outcome is a piece of art, \n");
+	int i;
+	for (i=1; i<10; i++)
+	{
+		printf("%d", i);
+	}
+	printf("\n");
 	return(0);
 
 }

@@ -2,26 +2,25 @@
 #include <stdlib.h>
 #include <time.h>
 
+
 /**
  * main - Entry point
  *
- * Return: Always 0 (success)
+ * Return: Always 0 (Success/correct)
  */
 int main(void)
 {
-	char i;
-	char j;
+	int i;
 
-	for (i = 'a'; i <= 'z'; i++)
+	for (i = 0; i < 10; i++)
 	{
 		putchar(i);
-	}
-
-	for (j = 'A'; j <= 'Z'; j++)
-	{
-		putchar(j);
+		if (i != 9)
+		{
+			putchar(',');
+			putchar(' ');
+		}
 	}
 	putchar('\n');
 	return (0);
-
 }
